@@ -1,0 +1,14 @@
+CRITICAL - 2025-02-07 10:39:37 --> CodeIgniter\HTTP\Exceptions\HTTPException: The uploaded file has already been moved.
+[Method: POST, Route: upload]
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 138.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(138): CodeIgniter\HTTP\Exceptions\HTTPException::forAlreadyMoved()
+ 2 APPPATH\Controllers\Admin.php(29): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs\\csv_kelola\\writable\\uploads/', '1738924777_d249c729f958e916e556.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->upload()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\csv_kelola\\public\\index.php')
+DEBUG - 2025-02-07 10:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-02-07 10:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
