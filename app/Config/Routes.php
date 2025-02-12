@@ -13,7 +13,7 @@ $routes->add('/tambah_pro', 'UjiKom::tambah_pro');
 $routes->add('/crud', 'UjiKom::CRUD');
 $routes->add('/crud/edit/(:num)', 'UjiKom::edit/$1');
 $routes->add('/crud/delete/(:num)', 'UjiKom::delete/$1');
-$routes->get('/enkripsi', 'UjiKom::Enkripsi');
+$routes->add('/enkripsi', 'UjiKom::Enkripsi');
 
 
 

@@ -124,7 +124,14 @@ class Ujikom extends BaseController
     public function enkripsi(): string
     {
 
-        return view('enkripsi');
+        $data = [
+            'kalimat' => $this->request->getPost('kalimat'),
+        ];
+
+        // Validasi input
+        // Jika data berhasil disimpan, kembalikan URL untuk redirect
+
+        return view('enkripsi', $data);
     }
 
 }
