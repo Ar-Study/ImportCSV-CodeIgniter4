@@ -49,8 +49,13 @@
                             <i class="bi bi-list"></i>
                         </a>
                     </li>
-                    <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item d-none d-md-block"><a href="" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item d-none d-md-block"><a href="<?= base_url('algoritma'); ?>"
+                            class="nav-link">Algoritma</a></li>
+                    <li class="nav-item d-none d-md-block"><a href="<?= base_url('crud'); ?>" class="nav-link">CRUD</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block"><a href="<?= base_url('enkripsi'); ?>"
+                            class="nav-link">Enkripsi Data</a></li>
                 </ul>
 
             </div>

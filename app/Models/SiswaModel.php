@@ -7,11 +7,12 @@ use CodeIgniter\Model;
 class SiswaModel extends Model
 {
     protected $table = 'siswa';
+    protected $primaryKey = 'id';
     protected $allowedFields = ['nama', 'umur', 'kelas'];
 
     public function getAllSiswa()
     {
-        return $this->findAll(); // Retrieve all records
+        return $this->db->table('siswa')->join('eskul', 'eskul.id_siswa == siswa.id')->get()->getResultArray(); // Retrieve all records
     }
 
     public function insertSiswa($data)

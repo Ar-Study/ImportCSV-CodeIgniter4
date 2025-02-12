@@ -6,14 +6,14 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 // $routes->get('/', 'Home::index');
-$routes->get('/', 'Admin::index');
-$routes->add('/upload', 'Admin::upload');
+$routes->get('/', 'UjiKom::index');
+$routes->get('/algoritma', 'UjiKom::Algoritma');
+$routes->get('/tambah', 'UjiKom::tambah');
+$routes->add('/tambah_pro', 'UjiKom::tambah_pro');
+$routes->add('/crud', 'UjiKom::CRUD');
+$routes->add('/crud/edit/(:num)', 'UjiKom::edit/$1');
+$routes->add('/crud/delete/(:num)', 'UjiKom::delete/$1');
+$routes->get('/enkripsi', 'UjiKom::Enkripsi');
 
-// $routes->get('/input', 'Siswa::index');
-$routes->get('/load-csv', 'input::loadCSV');
 
-// $routes->get('siswa', 'Siswa::index');
-// $routes->post('siswa/upload', 'Siswa::upload');
-$routes->get('/siswa', 'Siswa::index');
-$routes->get('/siswa/form', 'Siswa::form');
-$routes->post('/siswa/upload', 'Siswa::upload');
+

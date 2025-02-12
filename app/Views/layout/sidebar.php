@@ -3,7 +3,7 @@
     <div class="sidebar-brand">
         <!--begin::Brand Link-->
         <a href="./index.html" class="brand-link">
-            <span class="brand-text fw-light">Manage CSV</span>
+            <span class="brand-text fw-light">Uji Kompetensi</span>
             <!--end::Brand Text-->
         </a>
         <!--end::Brand Link-->
@@ -25,9 +25,21 @@
 
                 </li>
                 <li class="nav-item">
-                    <a href="<?= base_url('input'); ?>" class="nav-link">
+                    <a href="<?= base_url('algoritma'); ?>" class="nav-link">
                         <i class="nav-icon bi bi-palette"></i>
-                        <p>Import Data CSV</p>
+                        <p>Algoritma </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= base_url('crud'); ?>" class="nav-link">
+                        <i class="nav-icon bi bi-palette"></i>
+                        <p>CRUD </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= base_url('enkripsi'); ?>" class="nav-link">
+                        <i class="nav-icon bi bi-palette"></i>
+                        <p>Enkripsi </p>
                     </a>
                 </li>
             </ul>
